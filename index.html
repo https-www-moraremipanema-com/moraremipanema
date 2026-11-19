@@ -258,8 +258,8 @@ section{scroll-margin-top:12px}
 .form{background:#fff;border:1px solid var(--line);border-radius:4px;padding:32px}
 .form label{display:block;font-size:.68rem;letter-spacing:.14em;text-transform:uppercase;color:var(--muted);margin:0 0 8px}
 .form .field{margin-bottom:18px}
-.form input,.form textarea{width:100%;background:var(--paper);border:1px solid var(--line);border-radius:3px;font-family:"Inter";font-size:1rem;padding:13px 15px;color:var(--ink);transition:border-color .2s}
-.form input:focus,.form textarea:focus{outline:none;border-color:var(--tan)}
+.form input,.form textarea,.form select{width:100%;background:var(--paper);border:1px solid var(--line);border-radius:3px;font-family:"Inter";font-size:1rem;padding:13px 15px;color:var(--ink);transition:border-color .2s}
+.form input:focus,.form textarea:focus,.form select:focus{outline:none;border-color:var(--tan)}
 .form textarea{resize:vertical;min-height:96px}
 .form button{width:100%;margin-top:4px}
 .form .note{font-size:.78rem;color:var(--muted);text-align:center;margin:14px 0 0}
@@ -307,7 +307,7 @@ footer{padding:34px 0;text-align:center;color:var(--muted);font-size:.82rem;bord
     <p class="sub">Um andar inteiro. Um projeto de arquitetura. Pronto para morar — vendido porteira fechada.</p>
     <p class="price"><b>R$ 6.500.000</b><span>Venda direta com o proprietário</span></p>
     <div class="ctas">
-      <a class="btn btn-light" data-whatsapp href="#contato">Agendar uma visita
+      <a class="btn btn-light" data-whatsapp href="#contato">Receber informações
         <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M7 17 17 7M7 7h10v10"/></svg></a>
       <a class="btn btn-ghost" href="#galeria">Ver as 27 fotos</a>
     </div>
@@ -363,8 +363,8 @@ footer{padding:34px 0;text-align:center;color:var(--muted);font-size:.82rem;bord
     </div>
   </div>
   <div class="gallery" id="gallery">
-    <figure data-cat="social" data-full="fotos/sala-vista-mar-ipanema.jpg"><img src="fotos/sala-vista-mar-ipanema-720.jpg" srcset="fotos/sala-vista-mar-ipanema-720.jpg 720w, fotos/sala-vista-mar-ipanema.jpg 1440w" sizes="(max-width:700px) 100vw, 760px" width="1440" height="960" decoding="async" alt="Living integrado com vista lateral para o mar de Ipanema"><figcaption>Sala com vista lateral para o mar</figcaption><button class="open" type="button" aria-label="Ampliar: Sala com vista lateral para o mar"></button></figure>
-    <figure data-cat="social" data-full="fotos/vista-mar-praia-ipanema.jpg"><img src="fotos/vista-mar-praia-ipanema-720.jpg" srcset="fotos/vista-mar-praia-ipanema-720.jpg 720w, fotos/vista-mar-praia-ipanema.jpg 1200w" sizes="(max-width:700px) 50vw, 380px" width="1200" height="1600" decoding="async" alt="Vista para o mar e a Praia de Ipanema a partir do apartamento"><figcaption>Vista para o mar e a praia</figcaption><button class="open" type="button" aria-label="Ampliar: Vista para o mar e a praia"></button></figure>
+    <figure data-cat="social" data-full="fotos/sala-vista-mar-ipanema.jpg"><img src="fotos/sala-vista-mar-ipanema-720.jpg" srcset="fotos/sala-vista-mar-ipanema-720.jpg 720w, fotos/sala-vista-mar-ipanema.jpg 1440w" sizes="(max-width:700px) 100vw, 760px" width="1440" height="960" loading="lazy" decoding="async" alt="Living integrado com vista lateral para o mar de Ipanema"><figcaption>Sala com vista lateral para o mar</figcaption><button class="open" type="button" aria-label="Ampliar: Sala com vista lateral para o mar"></button></figure>
+    <figure data-cat="social" data-full="fotos/vista-mar-praia-ipanema.jpg"><img src="fotos/vista-mar-praia-ipanema-720.jpg" srcset="fotos/vista-mar-praia-ipanema-720.jpg 720w, fotos/vista-mar-praia-ipanema.jpg 1200w" sizes="(max-width:700px) 50vw, 380px" width="1200" height="1600" loading="lazy" decoding="async" alt="Vista para o mar e a Praia de Ipanema a partir do apartamento"><figcaption>Vista para o mar e a praia</figcaption><button class="open" type="button" aria-label="Ampliar: Vista para o mar e a praia"></button></figure>
     <figure data-cat="social" data-full="fotos/sala-principal-ipanema.jpg"><img src="fotos/sala-principal-ipanema-720.jpg" srcset="fotos/sala-principal-ipanema-720.jpg 720w, fotos/sala-principal-ipanema.jpg 1440w" sizes="(max-width:700px) 50vw, 380px" width="1440" height="960" loading="lazy" decoding="async" alt="Sala principal em três ambientes com marcenaria sob medida"><figcaption>Sala principal em três ambientes</figcaption><button class="open" type="button" aria-label="Ampliar: Sala principal em três ambientes"></button></figure>
     <figure data-cat="social" data-full="fotos/sala-estar-ipanema.jpg"><img src="fotos/sala-estar-ipanema-720.jpg" srcset="fotos/sala-estar-ipanema-720.jpg 720w, fotos/sala-estar-ipanema.jpg 1440w" sizes="(max-width:700px) 50vw, 380px" width="1440" height="960" loading="lazy" decoding="async" alt="Sala de estar com sofá em L e painel de TV"><figcaption>Sala de estar</figcaption><button class="open" type="button" aria-label="Ampliar: Sala de estar"></button></figure>
     <figure data-cat="social" data-full="fotos/sala-jantar-ipanema.jpg"><img src="fotos/sala-jantar-ipanema-720.jpg" srcset="fotos/sala-jantar-ipanema-720.jpg 720w, fotos/sala-jantar-ipanema.jpg 1440w" sizes="(max-width:700px) 50vw, 380px" width="1440" height="960" loading="lazy" decoding="async" alt="Sala de jantar com mesa redonda e luz natural"><figcaption>Sala de jantar</figcaption><button class="open" type="button" aria-label="Ampliar: Sala de jantar"></button></figure>
@@ -494,28 +494,30 @@ footer{padding:34px 0;text-align:center;color:var(--muted);font-size:.82rem;bord
   </div>
 </section>
 
-<!-- mi:links --><section id="guia" class="block wrap"><p class="eyebrow">Guia de Ipanema</p><h2>Conheça o bairro antes de visitar</h2><p class="lead">Guias sobre como é morar em Ipanema, o que avaliar na compra de um imóvel de alto padrão e o perfil de cada rua do bairro.</p><div class="mi-hub"><div><h3>Guias do bairro</h3><ul class="mi-list"><li><a href="/morar-em-ipanema.html">Morar em Ipanema</a></li><li><a href="/guia-ipanema.html">Guia de Ipanema</a></li><li><a href="/comprar-apartamento-em-ipanema.html">Comprar apartamento em Ipanema</a></li><li><a href="/mercado-imobiliario-ipanema.html">Mercado imobiliário de Ipanema</a></li><li><a href="/praca-general-osorio-ipanema.html">Praça General Osório em Ipanema</a></li><li><a href="/avenida-vieira-souto.html">Avenida Vieira Souto</a></li><li><a href="/morar-na-vieira-souto.html">Morar na Vieira Souto</a></li><li><a href="/apartamentos-vieira-souto.html">Apartamentos na Vieira Souto</a></li></ul></div><div><h3>Tipos de imóvel</h3><ul class="mi-list"><li><a href="/apartamento-alto-padrao-ipanema.html">Apartamento de alto padrão em Ipanema</a></li><li><a href="/apartamento-frente-mar-ipanema.html">Apartamento frente mar em Ipanema</a></li><li><a href="/apartamento-vista-mar-ipanema.html">Apartamento com vista para o mar em Ipanema</a></li><li><a href="/apartamento-perto-praia-ipanema.html">Apartamento perto da praia em Ipanema</a></li><li><a href="/apartamento-perto-general-osorio.html">Apartamento perto da General Osório em Ipanema</a></li><li><a href="/imoveis-proximos-arpoador.html">Imóveis próximos ao Arpoador</a></li><li><a href="/coberturas-em-ipanema.html">Coberturas em Ipanema</a></li><li><a href="/cobertura-duplex-ipanema.html">Cobertura duplex em Ipanema</a></li><li><a href="/condominios-luxo-ipanema.html">Condomínios de luxo em Ipanema</a></li><li><a href="/imoveis-de-luxo-ipanema.html">Imóveis de luxo em Ipanema</a></li></ul></div><div><h3>Ruas de Ipanema</h3><ul class="mi-list"><li><a href="/rua-alberto-de-campos-ipanema.html">Rua Alberto de Campos</a></li><li><a href="/rua-anibal-de-mendonca-ipanema.html">Rua Aníbal de Mendonça</a></li><li><a href="/rua-barao-da-torre-ipanema.html">Rua Barão da Torre</a></li><li><a href="/rua-farme-de-amoedo-ipanema.html">Rua Farme de Amoedo</a></li><li><a href="/rua-garcia-davila-ipanema.html">Rua Garcia d'Ávila</a></li><li><a href="/rua-gomes-carneiro-ipanema.html">Rua Gomes Carneiro</a></li><li><a href="/rua-henrique-dumont-ipanema.html">Rua Henrique Dumont</a></li><li><a href="/rua-joana-angelica-ipanema.html">Rua Joana Angélica</a></li><li><a href="/rua-maria-quiteria-ipanema.html">Rua Maria Quitéria</a></li><li><a href="/rua-nascimento-silva-ipanema.html">Rua Nascimento Silva</a></li><li><a href="/rua-prudente-de-morais-ipanema.html">Rua Prudente de Morais</a></li><li><a href="/rua-rainha-elizabeth-ipanema.html">Rua Rainha Elizabeth</a></li><li><a href="/rua-redentor-ipanema.html">Rua Redentor</a></li><li><a href="/rua-teixeira-de-melo-ipanema.html">Rua Teixeira de Melo</a></li><li><a href="/rua-vinicius-de-moraes-ipanema.html">Rua Vinicius de Moraes</a></li><li><a href="/rua-visconde-de-piraja-ipanema.html">Rua Visconde de Pirajá</a></li></ul></div></div></section>
-<!-- /mi:links -->
-
 <section id="contato" class="contact" aria-labelledby="contato-titulo">
   <div class="block wrap grid">
     <div>
       <p class="eyebrow">Contato direto</p>
       <h2 id="contato-titulo">Vamos conversar,<br>sem intermediários.</h2>
-      <p>Preencha ao lado e você será direcionado ao meu WhatsApp com a mensagem pronta. Respondo pessoalmente, com total discrição.</p>
+      <p>Peça mais informações ou combine uma visita. O contato é direto com o proprietário, pelo WhatsApp e com total discrição.</p>
       <div class="direct"><a class="btn btn-dark" data-whatsapp href="#">Falar agora no WhatsApp</a></div>
     </div>
     <form class="form" id="contact-form">
       <div class="field"><label for="nome">Seu nome</label><input id="nome" name="nome" type="text" autocomplete="name" placeholder="Como devo te chamar?" required></div>
+      <div class="field"><label for="cidade">De onde você fala? <span>(opcional)</span></label><select id="cidade" name="cidade"><option value="">Selecione uma cidade</option><option>Rio de Janeiro</option><option>São Paulo</option><option>Outra cidade</option></select></div>
+      <div class="field"><label for="prazo">Quando pretende comprar? <span>(opcional)</span></label><select id="prazo" name="prazo"><option value="">Selecione um prazo</option><option>Nos próximos 3 meses</option><option>De 3 a 6 meses</option><option>Estou pesquisando</option></select></div>
       <div class="field"><label for="fone">Telefone (opcional)</label><input id="fone" name="telefone" type="tel" autocomplete="tel" inputmode="tel" placeholder="(21) 90000-0000"></div>
-      <div class="field"><label for="msg">Mensagem</label><textarea id="msg" name="mensagem" placeholder="Tenho interesse no apartamento de Ipanema. Gostaria de agendar uma visita."></textarea></div>
-      <button class="btn btn-dark" id="send" type="submit">Enviar pelo WhatsApp
+      <div class="field"><label for="msg">O que gostaria de saber?</label><textarea id="msg" name="mensagem" placeholder="Tenho interesse no apartamento e gostaria de receber mais informações."></textarea></div>
+      <button class="btn btn-dark" id="send" type="submit">Pedir informações pelo WhatsApp
         <svg viewBox="0 0 24 24" fill="currentColor" stroke="none"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm5.3 14.1c-.2.6-1.3 1.2-1.8 1.2-.5.1-1 .1-1.7-.1-.4-.1-.9-.3-1.6-.6-2.8-1.2-4.6-4-4.7-4.2-.1-.2-1.1-1.5-1.1-2.8 0-1.3.7-2 .9-2.2.2-.3.5-.3.7-.3h.5c.2 0 .4 0 .6.5.2.5.7 1.8.8 1.9.1.1.1.3 0 .5l-.3.5-.4.5c-.1.1-.3.3-.1.6.2.3.8 1.3 1.7 2.1 1.2 1 2.1 1.4 2.4 1.5.3.1.5.1.6-.1.2-.2.7-.8.9-1.1.2-.3.4-.2.6-.1.2.1 1.5.7 1.7.9.2.1.4.2.5.3.1.2.1.7-.1 1.3Z"/></svg>
       </button>
       <p class="note">Seus dados vão apenas para o meu WhatsApp. Nada é armazenado neste site.</p>
     </form>
   </div>
 </section>
+
+<!-- mi:links --><section id="guia" class="block wrap"><p class="eyebrow">Guia de Ipanema</p><h2>Conheça o bairro antes de visitar</h2><p class="lead">Guias sobre como é morar em Ipanema, o que avaliar na compra de um imóvel de alto padrão e o perfil de cada rua do bairro.</p><div class="mi-hub"><div><h3>Guias do bairro</h3><ul class="mi-list"><li><a href="/morar-em-ipanema.html">Morar em Ipanema</a></li><li><a href="/guia-ipanema.html">Guia de Ipanema</a></li><li><a href="/comprar-apartamento-em-ipanema.html">Comprar apartamento em Ipanema</a></li><li><a href="/mercado-imobiliario-ipanema.html">Mercado imobiliário de Ipanema</a></li><li><a href="/praca-general-osorio-ipanema.html">Praça General Osório em Ipanema</a></li><li><a href="/avenida-vieira-souto.html">Avenida Vieira Souto</a></li><li><a href="/morar-na-vieira-souto.html">Morar na Vieira Souto</a></li><li><a href="/apartamentos-vieira-souto.html">Apartamentos na Vieira Souto</a></li></ul></div><div><h3>Tipos de imóvel</h3><ul class="mi-list"><li><a href="/apartamento-alto-padrao-ipanema.html">Apartamento de alto padrão em Ipanema</a></li><li><a href="/apartamento-frente-mar-ipanema.html">Apartamento frente mar em Ipanema</a></li><li><a href="/apartamento-vista-mar-ipanema.html">Apartamento com vista para o mar em Ipanema</a></li><li><a href="/apartamento-perto-praia-ipanema.html">Apartamento perto da praia em Ipanema</a></li><li><a href="/apartamento-perto-general-osorio.html">Apartamento perto da General Osório em Ipanema</a></li><li><a href="/imoveis-proximos-arpoador.html">Imóveis próximos ao Arpoador</a></li><li><a href="/coberturas-em-ipanema.html">Coberturas em Ipanema</a></li><li><a href="/cobertura-duplex-ipanema.html">Cobertura duplex em Ipanema</a></li><li><a href="/condominios-luxo-ipanema.html">Condomínios de luxo em Ipanema</a></li><li><a href="/imoveis-de-luxo-ipanema.html">Imóveis de luxo em Ipanema</a></li></ul></div><div><h3>Ruas de Ipanema</h3><ul class="mi-list"><li><a href="/rua-alberto-de-campos-ipanema.html">Rua Alberto de Campos</a></li><li><a href="/rua-anibal-de-mendonca-ipanema.html">Rua Aníbal de Mendonça</a></li><li><a href="/rua-barao-da-torre-ipanema.html">Rua Barão da Torre</a></li><li><a href="/rua-farme-de-amoedo-ipanema.html">Rua Farme de Amoedo</a></li><li><a href="/rua-garcia-davila-ipanema.html">Rua Garcia d'Ávila</a></li><li><a href="/rua-gomes-carneiro-ipanema.html">Rua Gomes Carneiro</a></li><li><a href="/rua-henrique-dumont-ipanema.html">Rua Henrique Dumont</a></li><li><a href="/rua-joana-angelica-ipanema.html">Rua Joana Angélica</a></li><li><a href="/rua-maria-quiteria-ipanema.html">Rua Maria Quitéria</a></li><li><a href="/rua-nascimento-silva-ipanema.html">Rua Nascimento Silva</a></li><li><a href="/rua-prudente-de-morais-ipanema.html">Rua Prudente de Morais</a></li><li><a href="/rua-rainha-elizabeth-ipanema.html">Rua Rainha Elizabeth</a></li><li><a href="/rua-redentor-ipanema.html">Rua Redentor</a></li><li><a href="/rua-teixeira-de-melo-ipanema.html">Rua Teixeira de Melo</a></li><li><a href="/rua-vinicius-de-moraes-ipanema.html">Rua Vinicius de Moraes</a></li><li><a href="/rua-visconde-de-piraja-ipanema.html">Rua Visconde de Pirajá</a></li></ul></div></div></section>
+<!-- /mi:links -->
 </main>
 
 <footer>Ipanema · Zona Sul · 300 m² · Venda direta com o proprietário — Rio de Janeiro / RJ</footer>
@@ -551,19 +553,29 @@ if(GA_ID){
   var g=document.createElement('script');g.async=1;g.src='https://www.googletagmanager.com/gtag/js?id='+GA_ID;document.head.appendChild(g);
   window.dataLayer=window.dataLayer||[];window.gtag=function(){dataLayer.push(arguments)};gtag('js',new Date());gtag('config',GA_ID);
 }
-function trackLead(){ if(window.fbq)fbq('track','Lead'); if(window.gtag)gtag('event','generate_lead',{value:6500000,currency:'BRL'}); }
+function trackContact(method){ if(window.fbq)fbq('track','Contact'); if(window.gtag)gtag('event','contact_click',{method}); }
+function trackFormSubmission(){ if(window.gtag)gtag('event','contact_form_submit'); }
 
 /* WhatsApp */
-const baseMsg="Olá! Tenho interesse no apartamento de 300 m² em Ipanema (R$ 6.500.000, venda direta). Gostaria de agendar uma visita.";
+const baseMsg="Olá! Vim pelo site do apartamento de 300 m² em Ipanema (R$ 6.500.000). Gostaria de receber mais informações e conversar sobre uma visita.";
+function campaignContext(){
+  const params=new URLSearchParams(location.search);
+  return ["utm_source","utm_medium","utm_campaign"].flatMap(key=>{
+    const value=(params.get(key)||"").replace(/[\r\n]/g," ").trim().slice(0,80);
+    return value?[[key,value]]:[];
+  }).map(([key,value])=>key+": "+value).join(" | ");
+}
 function waLink(t){return "https://wa.me/"+WHATSAPP+"?text="+encodeURIComponent(t||baseMsg);}
-document.querySelectorAll("[data-whatsapp]").forEach(a=>{a.href=waLink();a.target="_blank";a.rel="noopener";a.addEventListener("click",trackLead);});
+document.querySelectorAll("[data-whatsapp]").forEach(a=>{a.href=waLink(baseMsg+(campaignContext()?"\n\nOrigem: "+campaignContext():""));a.target="_blank";a.rel="noopener";a.addEventListener("click",()=>trackContact("whatsapp_link"));});
 document.getElementById("contact-form").addEventListener("submit",event=>{
   event.preventDefault();
-  const n=document.getElementById("nome").value.trim(),f=document.getElementById("fone").value.trim(),m=document.getElementById("msg").value.trim();
+  const n=document.getElementById("nome").value.trim(),c=document.getElementById("cidade").value,p=document.getElementById("prazo").value,f=document.getElementById("fone").value.trim(),m=document.getElementById("msg").value.trim();
   let t="Olá! Vim pelo site do apartamento de 300 m² em Ipanema.";
-  if(n)t+="\nNome: "+n; if(f)t+="\nTelefone: "+f;
-  t+="\n\n"+(m||"Gostaria de agendar uma visita.");
-  trackLead();window.open(waLink(t),"_blank","noopener");
+  if(n)t+="\nNome: "+n; if(c)t+="\nCidade: "+c; if(p)t+="\nPrazo de compra: "+p; if(f)t+="\nTelefone: "+f;
+  t+="\n\n"+(m||"Gostaria de receber mais informações.");
+  if(campaignContext())t+="\n\nOrigem: "+campaignContext();
+  trackContact("qualified_form");
+  trackFormSubmission();window.open(waLink(t),"_blank","noopener");
 });
 
 /* Galeria: filtros */
